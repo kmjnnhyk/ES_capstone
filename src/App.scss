@@ -1,0 +1,44 @@
+.App {
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 100;
+  .container {
+    position: relative;
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+    .explanation {
+      line-height: 1.75em;
+      word-break: keep-all;
+      .text {
+        margin: 24px 60px;
+
+        font-weight: 100;
+        text-align: center;
+      }
+      .ex {
+        margin: 0 96px;
+
+        text-align: center;
+        font-weight: 500;
+      }
+    }
+    .example2 {
+      h1 {
+        color: red;
+      }
+      p {
+      }
+    }
+    .example3 {
+      h1 {
+        color: blue;
+      }
+      p {
+      }
+    }
+  }
+}
