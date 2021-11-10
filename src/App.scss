@@ -1,49 +1,76 @@
 .App {
-  display: flex;
-  flex-direction: column;
-
   font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 100;
+  font-weight: 500;
   .container {
     position: relative;
 
     display: flex;
     flex-direction: column;
-    .explanation {
-      display: grid;
-      place-items: center;
-
-      position: relative;
-      left: -100%;
+    .page {
       height: 100vh;
+      &.cover {
+        display: grid;
+        place-items: center;
+        .background {
+          position: absolute;
+          img {
+            opacity: 50%;
+            z-index: -1;
+            &:nth-child(1) {
+              width: 128px;
+              position: relative;
+              left: -12px;
+              top: -160px;
+            }
+            &:nth-child(2) {
+              width: 80px;
+              position: relative;
+              top: 216px;
+            }
+            &:nth-child(3) {
+              width: 156px;
+              position: relative;
+              top: -24px;
+            }
+          }
+        }
+        .title {
+          font-size: 24px;
+        }
+      }
+      &.guide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .guide-announcement {
+          font-weight: 100;
+          text-align: center;
+          line-height: 2rem;
 
-      line-height: 1.75em;
-      word-break: keep-all;
-      .text {
-        margin: 24px 60px;
-
-        font-weight: 100;
-        text-align: center;
+          margin: 72px 0;
+        }
+        .guide-example {
+          font-size: 20px;
+        }
+        .words-map {
+          margin: 36px 0;
+          height: 100%;
+          display: grid;
+          place-items: center;
+          .word {
+            position: absolute;
+            @for $i from 1 to 12 {
+              &:nth-child(#{$i}) {
+              }
+            }
+          }
+        }
       }
-      .ex {
-        margin: 0 96px;
-
-        text-align: center;
-        font-weight: 500;
+      &.introduction {
       }
-    }
-    .example2 {
-      h1 {
-        color: red;
+      &.explanation {
       }
-      p {
-      }
-    }
-    .example3 {
-      h1 {
-        color: blue;
-      }
-      p {
+      &.cover {
       }
     }
   }
