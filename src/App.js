@@ -1,11 +1,48 @@
 import './App.scss';
 import { gsap } from 'gsap';
-import React from 'react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useEffect, useRef } from 'react';
 
 function App() {
+  const pageCoverRef = useRef();
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    // PAGE COVER
+    gsap.to('.background', {
+      x: 100,
+      duration: 3,
+      scrollTrigger: {
+        trigger: '.page cover',
+        start: 'top top',
+        end: '500px top',
+        scrub: true,
+      },
+    });
+    gsap.to('.title', {
+      opacity: 1,
+      scale: 1.5,
+      ease: 'power4',
+      duration: 3,
+    });
+
+    // PAGE GUIDE
+    gsap.to('.guide-announcement', {
+      opacity: 1,
+      duration: 3,
+      ease: 'power.in',
+      scrollTrigger: {
+        trigger: '.guide-announcement',
+        start: 'center 60%',
+        markers: true,
+      },
+    });
+  }, []);
+
   return (
     <div className='App'>
-      <div className='container'>
+      <div className='container' ref={pageCoverRef}>
         <div className='page cover'>
           <div className='background'>
             <img src='cover_image_one.png' alt='one' />
