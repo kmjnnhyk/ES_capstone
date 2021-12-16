@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ES_capstone/static/css/main.131e1516.chunk.css",
+    "main.js": "/ES_capstone/static/js/main.33871d26.chunk.js",
+    "main.js.map": "/ES_capstone/static/js/main.33871d26.chunk.js.map",
+    "runtime-main.js": "/ES_capstone/static/js/runtime-main.43fb34f7.js",
+    "runtime-main.js.map": "/ES_capstone/static/js/runtime-main.43fb34f7.js.map",
+    "static/js/2.5770354b.chunk.js": "/ES_capstone/static/js/2.5770354b.chunk.js",
+    "static/js/2.5770354b.chunk.js.map": "/ES_capstone/static/js/2.5770354b.chunk.js.map",
+    "index.html": "/ES_capstone/index.html",
+    "static/css/main.131e1516.chunk.css.map": "/ES_capstone/static/css/main.131e1516.chunk.css.map",
+    "static/js/2.5770354b.chunk.js.LICENSE.txt": "/ES_capstone/static/js/2.5770354b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43fb34f7.js",
+    "static/js/2.5770354b.chunk.js",
+    "static/css/main.131e1516.chunk.css",
+    "static/js/main.33871d26.chunk.js"
+  ]
+}
