@@ -38,7 +38,7 @@ function App() {
       },
     });
     gsap.to('.objet:nth-child(2)', {
-      y: 220,
+      y: 520,
       duration: 1.5,
       ease: 'Bounce.easeOut',
       scrollTrigger: {
@@ -53,11 +53,10 @@ function App() {
       scrollTrigger: {
         trigger: '.page introduction',
         start: '+2600 center',
-        markers: true,
       },
     });
     gsap.to('.objet:nth-child(3)', {
-      y: 220,
+      y: 520,
       duration: 1.5,
       ease: 'Bounce.easeOut',
       scrollTrigger: {
@@ -103,45 +102,64 @@ function App() {
         <div className='objets-background'>
           <img
             className='objet'
-            src='images/objet5.png'
+            src={`${process.env.PUBLIC_URL}/images/objet5.png`}
             alt='objets5'
           />
           <img
             className='objet'
-            src='images/objet2.png'
+            src={`${process.env.PUBLIC_URL}/images/objet2.png`}
             alt='objets5'
           />
           <img
             className='objet'
-            src='images/objet4.png'
+            src={`${process.env.PUBLIC_URL}/images/objet4.png`}
             alt='objets5'
           />
         </div>
         <div className='page cover'>
           <ul className='background'>
             <li className='background-text'>
-              <img src='images/cover_image1.png' alt='cover img1' />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/cover_image1.png`}
+                alt='cover img1'
+              />
+              ;
             </li>
             <li className='background-text'>
-              <img src='images/cover_image2.png' alt='cover img2' />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/cover_image2.png`}
+                alt='cover img2'
+              />
             </li>
             <li className='background-text'>
-              <img src='images/cover_image3.png' alt='cover img3' />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/cover_image3.png`}
+                alt='cover img3'
+              />
             </li>
             <li className='background-text'>
-              <img src='images/cover_image4.png' alt='cover img4' />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/cover_image4.png`}
+                alt='cover img4'
+              />
             </li>
             <li className='background-text'>
-              <img src='images/cover_image1.png' alt='cover img1' />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/cover_image1.png`}
+                alt='cover img1'
+              />
             </li>
             <li className='background-text'>
-              <img src='images/cover_image2.png' alt='cover img2' />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/cover_image2.png`}
+                alt='cover img2'
+              />
             </li>
           </ul>
           <div className='cover-title'>
             <p>세상의 소리를 담은</p>
             <h1>한글</h1>
-            <p>ES-캡스톤 프로젝트 전시</p>
+            <p>ES-캡스톤 프로젝트</p>
           </div>
         </div>
         <div className='page introduction'>
@@ -155,22 +173,24 @@ function App() {
           </p>
         </div>
         <div className='page guide'>
-          <h1>전시 안내</h1>
-          <p className='objet-announcement'>
-            천장에 설치되어 있는 오브제들은 <br />
-            우리나라의 전통 색채인 오방색으로 <br />
-            포인트를 준 작품입니다. 음양오행의 <br />
-            원리가 담겨있는 오방색과 천지인의 원리가 <br />
-            담겨있는 한글의 조화를 표현해 보았습니다
-          </p>
-          <p className='screen-announcement'>
-            가운데 테이블에 놓여진 <br />
-            웹캠 앞에서서 화면에 나오는
-            <br />
-            단어를 따라읽고 소리 크기에 따라
-            <br />
-            반응하는 글자를 주목해주세요
-          </p>
+          <div className='wrapper'>
+            <h1>전시 안내</h1>
+            <p className='objet-announcement'>
+              천장에 설치되어 있는 오브제들은 <br />
+              우리나라의 전통 색채인 오방색으로 <br />
+              포인트를 준 작품입니다. 음양오행의 <br />
+              원리가 담겨있는 오방색과 천지인의 원리가 <br />
+              담겨있는 한글의 조화를 표현해 보았습니다
+            </p>
+            <p className='screen-announcement'>
+              가운데 테이블에 놓여진 <br />
+              웹캠 앞에서서 화면에 나오는
+              <br />
+              단어를 따라읽고 소리 크기에 따라
+              <br />
+              반응하는 글자를 주목해주세요
+            </p>
+          </div>
         </div>
         <div className='page explanation'>
           <h1>한글의 과학성</h1>
