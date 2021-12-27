@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 - 페이드인
   > <img src = "https://user-images.githubusercontent.com/80577900/147475234-563f8c29-68f3-4b7b-8dc3-86c9292c77d4.gif" width = "160">
-  ```
+  ```js
   gsap.to('.cover-title', {
     opacity: 1,
     scale: 2,
@@ -24,7 +24,7 @@ gsap.registerPlugin(ScrollTrigger);
   ```
 - 양쪽으로 갈라지는 애니메이션
   > <img src = "https://user-images.githubusercontent.com/80577900/147475229-b141833b-744b-42e5-a860-76fa0641c7b8.gif" width = "160">
-  ```
+  ```js
   gsap.to('.background-text:nth-child(2n)', {
     x: 100,
     duration: 3,
@@ -49,7 +49,7 @@ gsap.registerPlugin(ScrollTrigger);
   ```
 - 바운스
   > <img src = "https://user-images.githubusercontent.com/80577900/147475214-8976244d-3409-446b-be92-e27396fd7933.gif" width = "160">
-  ```
+  ```js
   gsap.to('.objet:nth-child(1)', {
     opacity: 0.3,
     duration: 2,
